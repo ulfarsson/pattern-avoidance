@@ -37,3 +37,21 @@ def avoids_mpat(perm, mpat):
             if not any(shady):
                 return False
     return True
+
+def avoids_mpats(perm, mpats):
+    """
+    Returns False if any mesh pattern from mpats occurs in perm, otherwise
+    returns True
+
+    EXAMPLES
+
+    sage: avoids_mpat([1,2,3], [])
+    True
+    """
+
+    for mpat in mpats:
+
+        if avoids_mpat(perm, mpat) == False:
+            return False
+
+    return True
