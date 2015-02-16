@@ -1,4 +1,4 @@
-load("sub_functions.sage")
+load("../pattern-avoidance/sub_functions.sage")
 
 def avoids_mpat(perm, mpat):
     """
