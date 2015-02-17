@@ -1,3 +1,8 @@
+'''
+TODO: Write a faster to_standard
+'''
+from sage.combinat.permutation import to_standard
+
 def G(w):
     """
     The graph/diagram of the permutation w as a list of points
